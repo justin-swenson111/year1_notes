@@ -82,7 +82,7 @@ console.log('When compared with === is ' +(input1===input2))
 console.log('When compared with Object.is is '+ Object.is(input1,input2))
 console.log("Honey I Shrunk the Kids")
 
-let bits= prompt("How many bits")
+/*let bits= prompt("How many bits")
 let bytes=alert("There are " +(bits/8)+" Bytes")
 let kilobytes=alert("There are " +(bytes/1024)+" kilobytes")
 let megabytes=alert("There are " +(kilobytes/1024)+" MegaBytes")
@@ -93,5 +93,17 @@ console.log(bytes+" bytes")
 console.log(kilobytes+" Kilobytes")
 console.log(megabytes+" Megabytes")
 console.log(gigabytes+" Gigabytes")
-console.log(terabytes+" Terabytes")
+console.log(terabytes+" Terabytes")*/
 
+let x = 8542
+let y = 995
+function addFunction(x, y){
+    console.log(x+y)
+}
+addFunction(x,y)
+
+let my_name="Justin"
+function nameComment(name){
+    console.log(name+" youre amazing")
+}
+nameComment(my_name)

@@ -64,8 +64,20 @@ else:
 #first_name_input_test = input("what is your first name ")
 #print("your name is "+ first_name_input_test)
 
+#pythagorean theorem
+#a= float(input("what is the side a of the triangle"))
+#b= float(input("what is the side b of the triangle"))
+#hytonenuse= math.sqrt(a*a + b*b)
+#print("the hypotenuse is " + str(hytonenuse))
 
-a= float(input("what is the side a of the triangle"))
-b= float(input("what is the side b of the triangle"))
-hytonenuse= math.sqrt(a*a + b*b)
-print("the hypotenuse is " + str(hytonenuse))
+x = 14
+y = 25
+def add_function(num1, num2):
+    print(str(num1+num2))
+add_function(y, x)
+
+
+my_name="Justin"
+def name_comment(name):
+    print(name+" youre amazing")
+name_comment(my_name)
