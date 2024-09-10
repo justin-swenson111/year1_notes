@@ -101,6 +101,7 @@ EX.'''
 
 import math
 x = 23
+degree= 180
 last_name = "Bernard"
 first_name= "Tyrant"
 age = 16
@@ -108,24 +109,90 @@ fake_age = "25"
 patience = -25
 verbal_abuse = 100
 kenny_is_alive = False
-if (kenny_is_alive and age>25) or kenny_is_alive == False:
-    print("This is what you are doing this is what I want you to do")
-if last_name == "Bernard" or last_name== "tyrant":
-    print("You arrr lucky pirates")
-if last_name == "Bernard" and first_name== "Tyrant":
-    print("Its over for you")
-if age>20:
-    print("You Old")
-    age +=1
-elif age==19:
-    print("Your BDay last year was cool")
-else:
-    print("gerneration of Social Goblins")
-    age = 19
-if first_name =="Bernard":
-    print("NO")
-if not kenny_is_alive:
-    print("Kenny WHYYYYY")
-print("Khadeem Bernard")
+# if (kenny_is_alive and age>25) or kenny_is_alive == False:
+#     print("This is what you are doing this is what I want you to do")
+# if last_name == "Bernard" or last_name== "tyrant":
+#     print("You arrr lucky pirates")
+# if last_name == "Bernard" and first_name== "Tyrant":
+#     print("Its over for you")
+# if age>20:
+#     print("You Old")
+#     age +=1
+# elif age==19:
+#     print("Your BDay last year was cool")
+# else:
+#     print("gerneration of Social Goblins")
+#     age = 19
+# if first_name =="Bernard":
+#     print("NO")
+# if not kenny_is_alive:
+#     print("Kenny WHYYYYY")
+# print("Khadeem Bernard")
+# print(2**6)
+# print(math.sqrt(16))
+# print(math.pow(2,6))
+# print(math.log(math.e))
+# print(math.fmod(10,3))
+# print(math.factorial(5))
+# print(math.radians(180))
 
 
+
+
+
+
+
+
+#lists is Python
+'''Lists are used to store multiple items in a single variable
+works the same as an array on other languages'''
+food = ["tacos", "bananas", "burgers", "burritos", "pasta", "carrots"]
+# print(food)
+# print(len(food)) #length of lists
+# print(food[2])
+# print(sorted(food)) #sorts the lists but does not change the items in the list
+# print(food)
+# food.sort #sorts and alters the original list
+# print(food)
+# food.reverse() #revers the list order
+# print(food)
+# food.append("carmelcorn") #added to the end of the list OR 
+# food[6]="carmelcorn"
+# print(food)
+# print(food.index("burritos")) #returns the index of the item in the list
+# del food[2]
+# print(food)
+
+#dictionaries - Key value pairs like a dictionary and definition
+favGames = {"James":"War Thunder", "Dylan": "Rainbow 6 Seige", "Jake":"Fortnite", "Taaha":"Stardew Valley", "Eric":"Call of Duty", "Hyzer":"DCS"}
+# print(favGames)
+# print(favGames.keys())  #all the keys in the dictionary
+# print(favGames.values()) #all the values in the dictionary
+# print(len(favGames))
+
+# users = {"Justin":1001, "John":1002, "Smith":1003, "James":1004}
+# user= "Starman"
+# password = "inTheSky"
+# login_username= input("What is your Username")
+# login_password= input("What is your Password")
+# if login_username == user and login_password == password:
+#     print("success")
+# else:
+#     print("failure")
+
+#For loops used for sequential loops like a list dictionary set or even a string
+
+# for thing in food:
+#     print(thing)
+
+# for x in favGames:
+#     print(x)
+
+# for thing in food:
+#     print("i am the king")
+
+for x in food:
+    if thing != "bananas":
+        print("I'm not good")
+    else:
+        print(x + "are the best")
