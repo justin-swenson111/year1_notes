@@ -55,7 +55,7 @@ year="2024"
 number=7
 if alive==True and year==str(2024):
     print("yay")
-you could also do nested
+# you could also do nested
 if alive==True:
     if year==str(2024):
         print("yay")
@@ -73,7 +73,7 @@ else:
 first_name_input_test = input("what is your first name ")
 print("your name is "+ first_name_input_test)
 
-pythagorean theorem
+# pythagorean theorem
 a= float(input("what is the side a of the triangle"))
 b= float(input("what is the side b of the triangle"))
 hytonenuse= math.sqrt(a*a + b*b)

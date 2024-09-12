@@ -192,7 +192,7 @@ favGames = {"James":"War Thunder", "Dylan": "Rainbow 6 Seige", "Jake":"Fortnite"
 #     print("i am the king")
 
 for x in food:
-    if thing != "bananas":
-        print("I'm not good")
+    if x != "bananas":
+        print(x + " are not good")
     else:
-        print(x + "are the best")
+        print(x + " are the best")
