@@ -13,7 +13,7 @@ p{
 }
 .box{
     padding: 30px;
-    width: calc(90%-60px);
+    width: calc(90% - 60px);
     background-color: rebeccapurple;
     color: white;
 }

@@ -1,0 +1,109 @@
+h1{
+    color: blue;
+}
+.header{
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: limegreen;
+    background-color: black;
+    
+
+}
+.teenyTiny{
+    font-size: 1px;
+    font-family: cursive;
+    font-weight: 1px;
+    background-color: brown;
+    color: olive;
+    text-decoration: overline;
+    text-decoration: solid;
+    
+}
+#navigation{
+    color:aqua;
+    text-decoration: underline dotted black;
+}
+#testimonials{
+    color: orange;
+}
+.tester{
+    color:purple;
+}
+a{
+    color: blue;
+}
+a[href]{
+color: purple;
+}
+
+a:visited{
+    color: rosybrown;
+}
+a:hover{
+    color: hotpink;
+}
+a[href="west-mec.org"]{
+    color: orange;
+}
+.imgBasic:hover{
+    width:100% ;
+    height:100%;
+    border-radius: 100%;
+}
+p::first-letter{
+    font-size: larger;
+    font-family: fantasy;
+}
+a[href="https://Google.com"]{
+    color: red;
+}
+a[href="https://Wikipedia.com"]{
+    color: grey;
+}
+a[href="https://W3schools.com"]{
+    color: limegreen;
+}
+a[href="https://Mdn.com"]{
+    color: lightblue;
+}
+a[href="https://github.com"]{
+    color: green;
+}
+a[href="https://Google.com"]:visited{
+    color: red;
+}
+a[href="https://Wikipedia.com"]:visited{
+    color: grey;
+}
+a[href="https://W3schools.com"]:visited{
+    color: limegreen;
+}
+a[href="https://Mdn.com"]:visited{
+    color: lightblue;
+}
+a[href="https://github.com"]:visited{
+    color: green;
+}
+a[href="https://Google.com"]:hover{
+    text-decoration: none;
+}
+a[href="https://Wikipedia.com"]:hover{
+    text-decoration: none;
+}
+a[href="https://W3schools.com"]:hover{
+    text-decoration: none;
+}
+a[href="https://Mdn.com"]:hover{
+    text-decoration: none;
+}
+a[href="https://github.com"]:hover{
+    text-decoration: none;
+}
+a::first-letter{
+    font-size: larger;
+    font-family: fantasy;
+}
+a::after{
+content: ".com";
+}
