@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex is the best</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: orange;
+            font-size: xx-large;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            align-content: start;
+            height: 1000px;
+        }
+        .flex-container>div{
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 15px;
+        }
+        .box{
+            height: 100px;
+            /* width:100% */
+        }
+        .box1{
+            order:4;
+        }
+        .box2{
+            order:3;
+
+        }
+        .box3{
+            order:2;
+
+        }
+        .box4{
+            order:1;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box" style="flex-grow: 1; flex-shrink: 1;">
+            <h1>Anthisis</h1>
+        </div>
+        <div class="box" style=" flex-grow: 3; flex-shrink: 3;">
+            <h1>Berrys</h1>
+        </div>
+        <div class="box" style="flex-grow: 2; flex-shrink: 3;">
+            <h1>Claimn't</h1>
+        </div>
+        <div class="box" style="flex-grow: 7; flex-shrink: 1;">
+            <h1>Dirt</h1>
+        </div>
+
+        <!-- <div class="box1">
+            <img src="./images/square.jpg" alt="squares" width="150" >
+        </div class="box2">
+        <div>
+            <img src="./images/hexagon.jpg" alt="squares" width="150" >
+        </div class="box3">
+        <div>
+            <img src="./images/rhombus.jpg" alt="platypus" width="250" >
+        </div class="box4">
+        <div>
+            <img src="./images/triangle.jfif" alt="platypus" width="150" >
+        </div> -->
+
+
+
+
+    </div>
+</body>
+</html>
