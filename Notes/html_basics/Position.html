@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body{
+            width:90%;
+            max-width: 900PX;
+            margin: 0 auto;
+            font: .9em/1.2 Arial,Helvetica,sans-serif;
+        }
+        .float{
+            margin-left: 15px;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            background-color: rgb(207,232,220);
+            padding: 1em;
+        }
+
+        .float1{
+            float: left;
+        }
+        .float2{
+            float:right;
+        }
+
+        .img1{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left:45%;
+            top:45%;
+            z-index: 4;
+
+
+        }
+        .img2{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            z-index: 3;
+
+        }
+        .img3{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left:45%;
+            top: 50%;
+            z-index: 1;
+
+        }
+        .img4{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            z-index: 2;
+        }
+        .box{
+            margin-left: 15px;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            background-color: rgb(207,232,220);
+            padding: 1em;
+            float: left;
+        }
+        .special{
+            background-color: rgb(79,185,227);
+            padding: 10px;
+            color: #fff;
+        }
+        .wrapper{
+            background-color: rgb(79.185,227);
+            padding: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Position + Float</h1>
+    <p>
+        <img src="https://cdn.shopify.com/s/files/1/0583/2880/9623/files/goblin-shark.jpg?v=1689156357" alt="Goblin Shark" class="img1">
+        <img src="https://cdn.shopify.com/s/files/1/0583/2880/9623/files/goblin-shark.jpg?v=1689156357" alt="Goblin Shark" class="img2">
+        <img src="https://cdn.shopify.com/s/files/1/0583/2880/9623/files/goblin-shark.jpg?v=1689156357" alt="Goblin Shark" class="img3">
+        <img src="https://cdn.shopify.com/s/files/1/0583/2880/9623/files/goblin-shark.jpg?v=1689156357" alt="Goblin Shark" class="img4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum culpa autem ratione pariatur, amet natus, doloremque possimus modi debitis a mollitia nobis delectus in laudantium eius! Nam exercitationem quidem maxime vero! Dicta, exercitationem dolore nemo magni dignissimos cumque fugiat? Quidem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat vel facere provident ut. Explicabo consequatur repudiandae assumenda velit ipsam ea soluta eius molestias nulla. Optio veniam dolorem eaque fugit, odit sequi! Id excepturi ducimus numquam ad iure et, ipsum asperiores commodi. Voluptas, nam. Mollitia dicta amet reprehenderit eos id, at a aspernatur molestiae totam ducimus, enim sapiente quia, delectus est. Quos exercitationem alias in laudantium quo suscipit modi labore. Porro nostrum laborum unde expedita quisquam repellendus rerum placeat, consequatur voluptate autem aperiam sint sit voluptatem laudantium enim optio et distinctio obcaecati deleniti ullam eos architecto illo minima repellat! Fuga, voluptatum.
+    </p>
+    <div class="">
+        <div class="float float1">ONE</div>
+        <div class="float float2">TWO</div>
+        <p>The two boxes should float to either side of this text</p>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <h1> Simple Float example</h1>
+    <div class="wrapper">
+        <div class="box">Float</div>
+    </div>
+    <p class="special"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis facere asperiores! Delectus molestias eius qui assumenda in soluta excepturi.</p>
+
+    <p class="cleared">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae saepe rem voluptates temporibus fugit totam quis eveniet? Assumenda in sit voluptatum sunt reprehenderit. Quisquam culpa esse unde praesentium, ea error iste adipisci autem vero laudantium officiis, eum obcaecati assumenda tempora laborum animi quas beatae aut totam sapiente! Inventore, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati culpa, blanditiis esse voluptas delectus alias, laboriosam, tempore optio quod nostrum? Distinctio fugiat mollitia fuga?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque hic incidunt magni fugit totam aspernatur eligendi repudiandae modi doloremque nemo animi et corrupti earum excepturi nam numquam, iusto repellendus sunt corporis quae. Voluptatum perferendis delectus illo fugit quia aut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, praesentium placeat! Officia sint mollitia provident magnam quia neque molestias repellendus vero pariatur. Ullam eum quaerat dicta iste. Libero ducimus omnis autem praesentium doloribus rerum tempora, dolore eius maxime possimus at?</p>
+</body>
+</html>
