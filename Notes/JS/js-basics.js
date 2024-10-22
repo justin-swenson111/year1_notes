@@ -56,31 +56,31 @@ if (alive==true){
     }
 }
 //can get rid of ==true for boolean statements since they are already true or false
-if (alive){
-    console.log("alive")
-}
-let money=175
-if (money>=0 && money<=20){
-    console.log("Broke Netflix")
-}
-else if (money>=21 && money<=60){
-    console.log("Movie Theater")
-}
-else if (money>=61 && money<=80){
-    console.log("Dinner")
-}
-else{
-    console.log("Sky diving")
-}
+// if (alive){
+//     console.log("alive")
+// }
+// let money=175
+// if (money>=0 && money<=20){
+//     console.log("Broke Netflix")
+// }
+// else if (money>=21 && money<=60){
+//     console.log("Movie Theater")
+// }
+// else if (money>=61 && money<=80){
+//     console.log("Dinner")
+// }
+// else{
+//     console.log("Sky diving")
+// }
 
 let input1="1"
 let input2=1
 
-console.log("comparing " +input1+ "("+typeof(input1)+") and " + input2 + "(" + typeof(input2)+")") 
-console.log('When compared with == is'+(input1==input2))
-console.log('When compared with === is ' +(input1===input2))
-console.log('When compared with Object.is is '+ Object.is(input1,input2))
-console.log("Honey I Shrunk the Kids")
+// console.log("comparing " +input1+ "("+typeof(input1)+") and " + input2 + "(" + typeof(input2)+")") 
+// console.log('When compared with == is'+(input1==input2))
+// console.log('When compared with === is ' +(input1===input2))
+// console.log('When compared with Object.is is '+ Object.is(input1,input2))
+// console.log("Honey I Shrunk the Kids")
 
 /*let bits= prompt("How many bits")
 let bytes=alert("There are " +(bits/8)+" Bytes")
@@ -107,3 +107,42 @@ function nameComment(name){
     console.log(name+" youre amazing")
 }
 nameComment(my_name)
+
+//Comparers
+
+let test= "Bored"
+let test2 = "bored"
+
+
+ let trueFalse= false
+ if (trueFalse==true){
+    console.log("this is true")
+ }
+ else{
+    console.log("this is false")
+ }
+ let yearTest=2020
+ if (yearTest==2020) console.log("uh-oh")
+else if (yearTest==2021) console.log("happy new year"
+)
+
+if(true) console.log('works')
+if(0) console.log('doesnt work')
+
+let ageTest=20
+let canDrink= (ageTest>=21) ? true: false;
+console.log(canDrink)
+
+let a =1
+let b = 4
+let check = (a+b<4) ?"result":"over";
+console.log(check)
+
+let grade=90
+let letterGrade
+if (grade>=90)letterGrade="A"
+    else if(grade>=80)letterGrade="B"
+        else if(grade>=70)letterGrade="C"
+            else if(grade>=60)letterGrade="D"
+                else letterGrade="F"
+console.log(letterGrade)
