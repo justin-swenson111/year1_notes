@@ -146,3 +146,73 @@ if (grade>=90)letterGrade="A"
             else if(grade>=60)letterGrade="D"
                 else letterGrade="F"
 console.log(letterGrade)
+
+//  && || operator
+let havePen = false
+let havePaper = true
+let haveKeyboard = true
+let haveMouse = true
+if ((havePen && havePaper) || (haveKeyboard && haveMouse)) console.log("you can take notes"); console.log("hi");
+
+// not operator
+let upLate = false
+let playGames = false
+let studied = true
+let breakfast=true
+if (!upLate && !playGames && studied && breakfast)console.log("passed the test")
+
+// nullish operator
+let location = null
+let geolocation;
+console.log(geolocation ?? "Not a valid geo loaction")
+let newLocation =  location ?? "Arizona"
+console.log(newLocation)
+
+// array and for loop test
+let rndString=[];
+for (let i = 0; i < 5; i++) {
+    let rnd = Math.random()*100; 
+    rnd = Math.round(rnd); 
+    rndString[i]=rnd
+};
+    console.log(rndString)
+
+for (let i =10; i>1; i--){
+    console.log(i)
+}
+console.log("hi")
+for (let i =1; i<14; i++){
+    if (i%2==1 && i>4 ){
+        console.log(i)
+    }
+}
+
+// loop tests
+
+console.log("test1")
+for (let i=5; i<12; i++){
+console.log(i)
+}
+for (let i=1; i<10; i++){
+    console.log("this is nice")
+}
+for (let i=11; i>=1; i--){
+    if (i%2==1){
+        console.log(i)
+    }
+}
+
+// while loops
+console.log("while")
+let j =1
+let lis=["item1", "item2"]
+let dict={
+    "item1":["itm11", "itm12", "itm13"],
+    "item2":["im21","itm22", "itm23"]
+}
+while(j<3){
+    let option=lis[1]
+    dict.option[1]
+    // console.log(dict.option[1])
+    j++
+}
