@@ -212,7 +212,32 @@ let dict={
 }
 while(j<3){
     let option=lis[1]
-    dict.option[1]
+    // dict.option[1]
     // console.log(dict.option[1])
     j++
 }
+
+let k = 0
+do {
+    console.log("do while "+k)
+    k++
+} while (k<3)
+
+let classes = 12
+for (let i=0; i<classes; i++){
+    if (i==7){
+        console.log("Eaten by 7 :'(")
+        continue
+    }
+    console.log(i)
+    console.log("This should always print")
+}
+
+outer: for (let i =0; i<3; i++){
+    for (let l =0; l<6; l++){
+        let input = prompt(`value at coords (${i},${l})`,'')
+        if (input.length>0) break outer
+    }
+}
+alert("done!")
+
