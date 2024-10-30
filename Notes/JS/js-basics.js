@@ -135,6 +135,8 @@ console.log(canDrink)
 
 // let a =1
 // let b = 4
+// let check = (a+b<4) ?"result":"over";
+// console.log(check)
 
 let grade=90
 let letterGrade
@@ -233,11 +235,35 @@ for (let i=0; i<classes; i++){
 
 outer: for (let i =0; i<3; i++){
     for (let l =0; l<6; l++){
-        let input = prompt(`value at coords (${i},${l})`,'')
+        let input=1
+        // let input = prompt(`value at coords (${i},${l})`,'')
         if (input.length>0) break outer
     }
 }
-alert("done!")
+
+let ages = [5,12,18,21,58]
+for (let i =0; i<ages.length; i++){
+    console.log(ages[i])
+}
+let colors = ["red", "orange", "yellow", "green"]
+// colors[2] is yellow
+colors.push("pink")
+console.log(colors) 
+colors.push("seafoam green")
+console.log(colors) 
+colors.pop()
+console.log(colors) 
+colors.shift()
+console.log(colors)
+colors.unshift("Crimson","Purple","olive","lavender") 
+console.log(colors)
+console.log(colors.length)
+
+for (let colorsAmt of colors){
+    colorsAmt +="-solid"
+    console.log(colorsAmt)
+
+}
 
 var music =["jazz", "blues"]
 music.push("R&B")
