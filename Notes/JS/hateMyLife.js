@@ -25,7 +25,7 @@ console.log("scenario 2")
 West=0
 East=0
 for (i=0;i<InputArray.length;i++){
-    if (InputArray[i]=="(" && West<=East) West++
+    if (InputArray[i]=="(" && West<East) West++
     else if (InputArray[i]==")") East++
 }
 if (West>East){
@@ -37,3 +37,44 @@ else if (East>West){
 
 console.log("scenario 3")
 // Scenario 3
+
+West=0
+East=0
+//getting a section of the array to check if the code works
+// for (i=0;i<12;i++){
+//     console.log(InputArray[i])
+// }
+
+//Code to skip the second direction if it equals the previous one
+for (i=0;i<InputArray.length;i++){
+    if (InputArray[i+1]!=="undefined"){
+        if (InputArray[i+1]==InputArray[i]){
+            InputArray[i+1]="skipped"
+        }
+    }
+}
+
+//counting the updated array
+for (i=0;i<InputArray.length;i++){
+    if (InputArray[i]=="(") West++
+    else if (InputArray[i]==")") East++
+}
+
+//checking the same section to see changes
+// console.log("break")
+// for (i=0;i<12;i++){
+//     console.log(InputArray[i])
+// }
+
+//printing where it needs to go
+if (West>East){
+    console.log(`You need to go ${West-East} stations west`)
+}
+else if (East>West){
+    console.log(`You need to go ${East-West} stations east`)
+}
+
+console.log("Extra Challenge")
+//Extra Challenge
+
+let inputChallenge
