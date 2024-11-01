@@ -24,6 +24,7 @@ console.log("scenario 2")
 
 West=0
 East=0
+
 for (i=0;i<InputArray.length;i++){
     if (InputArray[i]=="(" && West<East) West++
     else if (InputArray[i]==")") East++
@@ -40,10 +41,7 @@ console.log("scenario 3")
 
 West=0
 East=0
-//getting a section of the array to check if the code works
-// for (i=0;i<12;i++){
-//     console.log(InputArray[i])
-// }
+
 
 //Code to skip the second direction if it equals the previous one
 for (i=0;i<InputArray.length;i++){
@@ -60,12 +58,6 @@ for (i=0;i<InputArray.length;i++){
     else if (InputArray[i]==")") East++
 }
 
-//checking the same section to see changes
-// console.log("break")
-// for (i=0;i<12;i++){
-//     console.log(InputArray[i])
-// }
-
 //printing where it needs to go
 if (West>East){
     console.log(`You need to go ${West-East} stations west`)
@@ -77,4 +69,39 @@ else if (East>West){
 console.log("Extra Challenge")
 //Extra Challenge
 
-let inputChallenge
+West=0
+East=0
+
+let inputChallenge = input.match(/.{1,4}/g)
+for (let i =0;i< inputChallenge.length;i++){
+
+    let direction = String(inputChallenge[i]).charAt(0)
+    let Distance=[]
+    Distance[i]="dist"
+
+
+    for (j=1;j<4;j++){
+        let dist
+        if (String(inputChallenge[i]).charAt(j)=="("){
+            dist="1"
+        }
+        else if (String(inputChallenge[i]).charAt(j)==")"){
+            dist="0"
+        }
+            Distance[i]+=dist
+    }
+
+    if (direction=="("){
+        West+=parseInt(String(Distance[i]).substring(4),2)
+    }
+    else if (direction==")"){
+        East+=parseInt(String(Distance[i]).substring(4),2)
+    }
+}
+
+if (West>East){
+    console.log(`You need to go ${West-East} stations west`)
+}
+else if (East>West){
+    console.log(`You need to go ${East-West} stations east`)
+}
