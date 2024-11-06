@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Title">This is a test Website</h1>
+        <input type="text" name="description" id="descrip">
+        <button ondblclick="ChangeName('Swenson')">Click Here</button>
+
+    <img onclick="swatch()" src="./images/duck.png" alt="" id="pls" width="100px" height="100px">
+</body>
+<script>
+    let storage = document.getElementById("Title")
+    let swap = true
+    storage.textContent= "This is brand New"
+    console.log(storage.innerHTML)
+    function ChangeName(name){
+            storage.textContent= name
+            storage.style.color="purple"
+            storage.style.fontSize="200px"
+            storage.style.textDecoration="underline"
+            storage.style.fontFamily='Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    function swatch(){
+        let image = document.getElementById("pls")
+            image.src="./images/capybara.jpg"
+
+    }
+</script>
+</html>
