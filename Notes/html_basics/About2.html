@@ -6,28 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="Title">This is a test Website</h1>
+    <!-- <h1 id="Title">This is a test Website</h1>
         <input type="text" name="description" id="descrip">
         <button ondblclick="ChangeName('Swenson')">Click Here</button>
 
     <img onclick="swatch()" src="./images/duck.png" alt="" id="pls" width="100px" height="100px">
+    <br><br><br> -->
+    <div class="container test scooby" id="container">
+        <h2>Guess the number game</h2>
+        <p>enter a number between 1 and 10:</p>
+        <input type="number" id="userInput" placeholder="Your guess here" min="1" max="10">
+        <button onclick="guessNumber()">Guess</button>
+        <div id="output" class="output"></div>
+    </div>
 </body>
 <script>
-    let storage = document.getElementById("Title")
-    let swap = true
-    storage.textContent= "This is brand New"
-    console.log(storage.innerHTML)
-    function ChangeName(name){
-            storage.textContent= name
-            storage.style.color="purple"
-            storage.style.fontSize="200px"
-            storage.style.textDecoration="underline"
-            storage.style.fontFamily='Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    }
-    function swatch(){
-        let image = document.getElementById("pls")
-            image.src="./images/capybara.jpg"
+    // let storage = document.getElementById("Title")
+    // let swap = true
+    // storage.textContent= "This is brand New"
+    // console.log(storage.innerHTML)
+    // function ChangeName(name){
+    //         storage.textContent= name
+    //         storage.style.color="purple"
+    //         storage.style.fontSize="200px"
+    //         storage.style.textDecoration="underline"
+    //         storage.style.fontFamily='Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    // }
+    // function swatch(){
+    //     let image = document.getElementById("pls")
+    //         image.src="./images/capybara.jpg"
+    // }
 
+    
+    function guessNumber(){
+        let RandomNumber = Math.floor(Math.random()*10)+1
+        const userInput= parseInt(document.getElementById("userInput").value)
+        const output = document.getElementById("output")
+        if (isNaN(userInput) || userInput<1 || userInput>10){
+            output.textContent = "Please enter a valid number between "
+        } else if (userInput === RandomNumber){
+            output.textContent = "Congratualtions! You guessed the correct number!"
+        } else {
+            output.textContent = `Wrong guess! The number was ${RandomNumber}! Try again!`
+        }
     }
+    
+    console.log(document.getElementById("container").classList)
+
 </script>
 </html>
