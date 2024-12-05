@@ -196,3 +196,24 @@ for x in food:
         print(x + " are not good")
     else:
         print(x + " are the best")
+
+##While Loops
+contacts = []
+index = 2
+while index<=10:
+    print(index)
+    index+=2
+
+def pretty_print(name,direction):
+    print("-----***" + name + "***-----")
+    contacts.append(name)
+    if (direction[0].upper()=="N"):
+        return "Have fun with the snow"
+    elif (direction[0].upper()=="S"):
+        return "The hot south needs fans"
+    elif (direction[0].upper()=="E"):
+        return "Has the best pizza"
+    else:
+        return "Either from the west or somewhere else either way you suck"
+    
+pretty_print("swenson", "north")

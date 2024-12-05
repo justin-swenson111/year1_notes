@@ -308,3 +308,7 @@ for (let i=0; i<newWords.length; i++){
 words = newWords.join("-")
 console.log(words)
 
+let dfg = 10
+let ghf =(dfg<20)?"hi":(dfg>20)?"bye":"no";
+console.log(ghf)
+
