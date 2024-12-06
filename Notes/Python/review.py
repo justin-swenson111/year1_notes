@@ -1,6 +1,7 @@
 import math
 
 string_input=input("Please type a string with upper and lower case characters:")
+
 print(string_input)
 
 lower_string = string_input.upper()
@@ -55,3 +56,4 @@ calc_area(val1,val2)
 
 celcius = float(input("Choose a temperature in celcius:"))
 convert_degree(celcius)
+
